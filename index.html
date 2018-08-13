@@ -2,15 +2,29 @@
 <html>
     <head>
         <title>Palindrome</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
         <h1>Palindrome App</h1>
-        <p>A palindrome is a word or phrase that is spelt the same way forward and backward  (disregarding whitespace, punctuation and capitalization). Examples include ​madam ​ , ​level ​ ,  nurses run ​ . </p>
+        <p>A palindrome is word, phrase, or sequence that reads the same backward as forward, e.g., madam or nurses run.</p>
 
-        <form>
+        <form id="form" onsubmit="event.preventDefault();" action="">
             <input type="text" id="palindrome" placeholder="Check for palindrome">
-            <input type="submit" id="check" value="Submit">
-        </form>
+            <input type="submit" id="check" value="Check">
+        </form><br>
+
+        <table id="inputs" style="width: 50%">
+            <thead>
+                <tr>
+                    <th>Palindromes</th>
+                    <th>Check</th>
+                </tr>        
+            </thead>
+            <tbody id="tBody"> 
+
+            </tbody>
+
+        </table>
     </body>
     <script src="app.js"></script>
 </html> 
