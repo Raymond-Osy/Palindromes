@@ -1,4 +1,5 @@
 body {
+    margin: 0;
     text-align: center;
     background: purple;
     height: 100%;
@@ -72,13 +73,6 @@ input[type=text] {
     flex: 35%;
 }
 
-
-.blue {
-    background-color: blue;
-}
-.red {
-    background-color: red;
-}
 table {
     width: 100%;
     margin-top: 20px;
@@ -95,9 +89,31 @@ th, td {
 th {
     text-align: center;
     font-size: 20px;
+    background-color: purple;
+    color: white;
+}
+td {
+    font-size: 20px;
+}
+footer {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    color: #FFFFFF;
+    background: linear-gradient(rgba(0, 0, 0, 0.205), rgba(0, 0, 0, 0.9));
+    padding: 0 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    margin-top: 130px;
+    bottom: 0;
 }
 
 @media (max-width: 550px){
+    h1 {
+        font-size: 40px;
+    }
     .btn2 {
      /* display: flex;
         flex-grow: 10; */

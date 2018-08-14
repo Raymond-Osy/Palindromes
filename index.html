@@ -9,31 +9,37 @@
         <h1>Palindrome</h1>
 
         <div class="container">
-            <p>A palindrome is word, phrase, or sequence that reads the same backward as forward, e.g., madam or nurses run.</p>
+            <p>A palindrome is word, phrase, or sequence that reads the same backward as forward, e.g., madam, nurses run, race car e.t.c. Type in the text-box below to check if a word is a palindrome.</p>
             <div class="wrap">
                 <form id="form" onsubmit="event.preventDefault();" action="">
                     <div class="flex">
-                        <input class="col-65" type="text" id="palindrome" placeholder="Check for palindrome">
+                        <input class="col-65" type="text" id="palindrome" placeholder="Check for palindrome here...">
                         <input class="col-35 btn" type="submit" id="check" value="Check">
                     </div>
                 </form><br>
                 <div class="btn2">
                     <button class="btn" id="clearBtn" type="type">Clear Table</button> 
                 </div>
+                <div style="overflow-x:auto;">
+                    <table id="inputs">
+                        <thead>
+                            <tr>
+                                <th>Palindromes</th>
+                                <th>Check</th>
+                            </tr>        
+                        </thead>
+                        <tbody id="tBody"> 
 
-                <table id="inputs">
-                    <thead>
-                        <tr>
-                            <th>Palindromes</th>
-                            <th>Check</th>
-                        </tr>        
-                    </thead>
-                    <tbody id="tBody"> 
-
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
+
+        <footer>
+            <!-- <p>Copyright &copy; 2018, Raymond Akalonu.</p> -->
+            <p>Designed by Raymond, for my delight</p>
+        </footer>
     </body>
     <script src="app.js"></script>
 </html> 
