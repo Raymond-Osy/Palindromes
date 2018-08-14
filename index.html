@@ -2,29 +2,38 @@
 <html>
     <head>
         <title>Palindrome</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
-        <h1>Palindrome App</h1>
-        <p>A palindrome is word, phrase, or sequence that reads the same backward as forward, e.g., madam or nurses run.</p>
+        <h1>Palindrome</h1>
 
-        <form id="form" onsubmit="event.preventDefault();" action="">
-            <input type="text" id="palindrome" placeholder="Check for palindrome">
-            <input type="submit" id="check" value="Check">
-        </form><br>
+        <div class="container">
+            <p>A palindrome is word, phrase, or sequence that reads the same backward as forward, e.g., madam or nurses run.</p>
+            <div class="wrap">
+                <form id="form" onsubmit="event.preventDefault();" action="">
+                    <div class="flex">
+                        <input class="col-65" type="text" id="palindrome" placeholder="Check for palindrome">
+                        <input class="col-35 btn" type="submit" id="check" value="Check">
+                    </div>
+                </form><br>
+                <div class="btn2">
+                    <button class="btn" id="clearBtn" type="type">Clear Table</button> 
+                </div>
 
-        <table id="inputs" style="width: 50%">
-            <thead>
-                <tr>
-                    <th>Palindromes</th>
-                    <th>Check</th>
-                </tr>        
-            </thead>
-            <tbody id="tBody"> 
+                <table id="inputs">
+                    <thead>
+                        <tr>
+                            <th>Palindromes</th>
+                            <th>Check</th>
+                        </tr>        
+                    </thead>
+                    <tbody id="tBody"> 
 
-            </tbody>
-        </table>
-        <button id="clearBtn" type="type">Clear Table</button>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </body>
     <script src="app.js"></script>
 </html> 

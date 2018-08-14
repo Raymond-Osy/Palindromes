@@ -1,10 +1,122 @@
+body {
+    text-align: center;
+    background: purple;
+    height: 100%;
+}
+* {
+    box-sizing: border-box;
+}
+h1 {
+    font-family: Tahoma, Geneva, sans-serif;
+    color: white;
+    font-size: 50px;
+}
+p {
+    font-size: 18px;
+}
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    padding: 15px;
+    background-color:#f531f5;
+    border: 1px solid #151e22;
+    border-radius: 4px;
+    box-shadow: 0px 5px 15px 0px #031218;
+}
+.wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+}
+input[type=text] {
+    padding: 10px 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.btn {
+    background-color: purple;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 16px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    height: 45px;
+    border-radius: 4px;
+  }
+.btn:hover {
+    opacity: 1
+}
+.btn2 {
+    width: 100%;
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0;
+}
+.flex {
+    display: flex;
+}
+.col-65 {
+    flex: 65%;
+}
+.col-35 {
+    flex: 35%;
+}
+
+
+.blue {
+    background-color: blue;
+}
+.red {
+    background-color: red;
+}
+table {
+    width: 100%;
+    margin-top: 20px;
+}
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
+    padding: 20px;
+    font-size: 16px;
 }
 th, td {
     padding: 5px;
 }
 th {
-    text-align: left;
+    text-align: center;
+    font-size: 20px;
+}
+
+@media (max-width: 550px){
+    .btn2 {
+     /* display: flex;
+        flex-grow: 10; */
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .flex {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    input[type=text] {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+    }
 }
