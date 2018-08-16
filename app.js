@@ -22,6 +22,7 @@ checkBtn.onclick = function (){
         <td>True</td>
       </tr>`;
       document.getElementById("tBody").innerHTML = currentTable;  //Put the table into the tBody element in HTML
+      document.getElementById('palindrome').value = "";  //Clears text box after submitting
     }
     else {   //If not...
       currentTable +=   //Set input to False and put the input into the empty table
@@ -30,6 +31,7 @@ checkBtn.onclick = function (){
         <td>False</td>
       </tr>`;
       document.getElementById("tBody").innerHTML = currentTable;  //Put the table into the tBody element in HTML
+      document.getElementById('palindrome').value = "";  //Clears text box after submitting
     }
 
     // Clears the table once the clear button is clicked
